@@ -39,7 +39,7 @@ $result = $s3->putObject(array(
 				'Bucket'       => $bucket,
 				'Key'          => $fileName,
 				'SourceFile'   => $fileTempName
-//));
+));
 
 // Print the .
 print "File uploaded: {$fileName}".PHP_EOL;
