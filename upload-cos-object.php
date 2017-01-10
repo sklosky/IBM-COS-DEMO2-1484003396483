@@ -22,13 +22,6 @@ $fileTempName = $_FILES['myfile']['tmp_name'];
 $fileType = $_FILES['myfile']['type'];
 $fileSize = $_FILES['myfile']['size'];
 
-echo 'showing files array<BR>';
-echo $fileName;
-echo $fileTempName;
-echo $fileType;
-echo $fileSize;
-echo sys_get_temp_dir();
-echo '<BR>';
 //
 // Instantiate the client.
 //
@@ -42,10 +35,10 @@ $s3 = S3Client::factory(array(
     )
 ));
 
-//$result = $s3->putObject(array(
-//				'Bucket'       => $bucket,
-//				'Key'          => $fileName,
-//				'SourceFile'   => $fileTempName
+$result = $s3->putObject(array(
+				'Bucket'       => $bucket,
+				'Key'          => $fileName,
+				'SourceFile'   => $fileTempName
 //));
 
 // Print the .
