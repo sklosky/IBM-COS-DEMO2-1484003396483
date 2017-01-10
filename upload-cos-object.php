@@ -34,9 +34,9 @@ $s3 = S3Client::factory(array(
 ));
 
 $result =$s3->putObject(array(
-				'Bucket' => $bucket,
-				'Key'    => $fileName,
-				'Body'   => fopen($fileTempName, 'r+')
+				'Bucket'       => $bucket,
+				'Key'          => $fileName,
+				'SourceFile'   => $fileTempName
 ));
 
 // Print the .
