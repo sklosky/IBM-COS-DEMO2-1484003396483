@@ -8,13 +8,14 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\S3\Exception\S3Exception;
 //date_default_timezone_set ( 'America/Los_Angeles' );
-$bucket = 'jrs-pictures-2';
 
 //
 // Get the filename from the previous form
 //
 $myuploadfile = $_POST['myfile'];
 $key = $myuploadfile;
+
+$bucket = $_POST['mybucket'];
 
 //
 // Instantiate the client.
