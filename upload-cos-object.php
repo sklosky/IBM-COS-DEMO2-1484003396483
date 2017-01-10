@@ -22,7 +22,7 @@ $bucket = $_POST['mybucket'];
 //
 $s3 = S3Client::factory(array(
     'version' => 'latest',
-    'region'  => 'us-west-1',
+    'region'  => '',
     'endpoint' => 'http://'.$ENDPOINT,
 //  'profile' => 'pool2',
     'credentials' => array(
@@ -40,4 +40,3 @@ $result =$s3->putObject(array(
 // Print the .
 print "File uploaded: {$myuploadfile}".PHP_EOL;
 ?>
-

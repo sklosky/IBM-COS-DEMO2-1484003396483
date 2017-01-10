@@ -15,5 +15,3 @@ Choose file to upload
 </form>
 </body>
 </html>
-
-

@@ -23,7 +23,7 @@ $mystring = $_POST['mystring'];
 //
 $s3 = S3Client::factory(array(
     'version' => 'latest',
-    'region'  => 'us-west-1',
+    'region'  => '',
     'endpoint' => 'http://'.$ENDPOINT,
 //  'profile' => 'pool2',
     'credentials' => array(
