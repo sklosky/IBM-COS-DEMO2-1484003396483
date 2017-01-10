@@ -1,16 +1,15 @@
 <html>
 <head></head>
 <body>
-<form name="form1" method="post" action="upload-cos-object.php">
-<form action="<?=$PHP_SELF?>" method="post" enctype="multipart/form-data"
-<br><br>
+<form enctype="multipart/form-data" name="form1" method="POST" action="upload-cos-object.php" >
+<br>
 Enter the bucket name
 <br>
 <input type="text" name="mybucket">
-<br><br>
+<br>
 Choose file to upload
 <input type="file" name="myfile">
-<br><br>
+<br>
 <input type="submit" name="Submit" value="Submit">
 </form>
 </body>

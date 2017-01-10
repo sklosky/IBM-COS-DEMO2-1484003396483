@@ -19,12 +19,14 @@ $bucket = $_POST['mybucket'];
 //
 $fileName = $_FILES['myfile']['name'];
 $fileTempName = $_FILES['myfile']['tmp_name'];
+$fileType = $_FILES['myfile']['type'];
+$fileSize = $_FILES['myfile']['size'];
+
 echo 'showing files array<BR>';
-echo $_FILES['myfile']['name'];
-echo $_FILES['myfile']['type'];
-echo $_FILES['myfile']['size'];
-echo $_FILES['myfile']['tmp_name'];
-echo $_FILES['myfile']['error'];
+echo $fileName;
+echo $fileTempName;
+echo $fileType;
+echo $fileSize;
 echo sys_get_temp_dir();
 echo '<BR>';
 //
