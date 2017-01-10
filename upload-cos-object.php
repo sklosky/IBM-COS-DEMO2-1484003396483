@@ -20,23 +20,25 @@ $bucket = $_POST['mybucket'];
 //
 // Instantiate the client.
 //
-$s3 = S3Client::factory(array(
-    'version' => 'latest',
-    'region'  => '',
-    'endpoint' => 'http://'.$ENDPOINT,
+//$s3 = S3Client::factory(array(
+//    'version' => 'latest',
+//    'region'  => '',
+//    'endpoint' => 'http://'.$ENDPOINT,
 //  'profile' => 'pool2',
-    'credentials' => array(
-         'key'    => $ACCESSKEY,
-         'secret' => $SECRETKEY
-    )
-));
+//    'credentials' => array(
+//         'key'    => $ACCESSKEY,
+//         'secret' => $SECRETKEY
+//    )
+//));
 
-$result =$s3->putObject(array(
-    'Bucket' => $bucket,
-    'Key'    => $key,
-    'SourceFile' => $myuploadfile
-));
+//$result =$s3->putObject(array(
+//    'Bucket' => $bucket,
+//    'Key'    => $key,
+//    'SourceFile' => $myuploadfile
+//));
 
 // Print the .
 print "File uploaded: {$myuploadfile}".PHP_EOL;
+echo "<BR>";
+echo "Bucket = " . $bucket;
 ?>
