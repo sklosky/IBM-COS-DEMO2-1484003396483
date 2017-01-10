@@ -33,7 +33,11 @@ $s3 = S3Client::factory(array(
     )
 ));
 
-$result =$s3->putObject($fileTempName, $bucket, $fileName, S3::ACL_PUBLIC_READ);
+$result =$s3->putObject(array(
+				'Bucket' => $bucket,
+				'Key'    => $fileName,
+				'Body'   => fopen($fileTempName, 'r+')
+));
 
 // Print the .
 print "File uploaded: {$myuploadfile}".PHP_EOL;
