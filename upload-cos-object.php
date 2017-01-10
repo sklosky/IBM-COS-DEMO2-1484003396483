@@ -19,7 +19,9 @@ $bucket = $_POST['mybucket'];
 //
 $fileName = $_FILES['myfile']['name'];
 $fileTempName = $_FILES['myfile']['tmp_name'];
-
+echo 'showing files array<BR>';
+echo $_FILES;
+echo '<BR>';
 //
 // Instantiate the client.
 //
@@ -33,11 +35,11 @@ $s3 = S3Client::factory(array(
     )
 ));
 
-$result =$s3->putObject(array(
-				'Bucket'       => $bucket,
-				'Key'          => $fileName,
-				'SourceFile'   => $fileTempName
-));
+//$result = $s3->putObject(array(
+//				'Bucket'       => $bucket,
+//				'Key'          => $fileName,
+//				'SourceFile'   => $fileTempName
+//));
 
 // Print the .
 print "File uploaded: {$myuploadfile}".PHP_EOL;
