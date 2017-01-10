@@ -20,16 +20,15 @@ $bucket = $_POST['mybucket'];
 //
 // Instantiate the client.
 //
-//$s3 = S3Client::factory(array(
-//    'version' => 'latest',
-//    'region'  => '',
-//    'endpoint' => 'http://'.$ENDPOINT,
-//  'profile' => 'pool2',
-//    'credentials' => array(
-//         'key'    => $ACCESSKEY,
-//         'secret' => $SECRETKEY
-//    )
-//));
+$s3 = S3Client::factory(array(
+      'version' => 'latest',
+      'region'  => '',
+      'endpoint' => 'http://'.$ENDPOINT,
+      'credentials' => array(
+         'key'    => $ACCESSKEY,
+         'secret' => $SECRETKEY
+    )
+));
 
 //$result =$s3->putObject(array(
 //    'Bucket' => $bucket,
