@@ -4,13 +4,10 @@
 //
 
 require 'vendor/autoload.php';
+require 'variables.php';
 use Aws\S3\S3Client;
 use Aws\S3\Exception\S3Exception;
 //date_default_timezone_set ( 'America/Los_Angeles' );
-
-$host = 's3-api.us-geo.objectstorage.softlayer.net';
-$accesskey = 'zLTY2mbQlxtSVKEwNHpC';
-$secretkey = 'OXD1eo4lumy55184x6RiAUhFrSbEFykRPgAYpKfw';
 
 //
 // Receive the bucket name from the get bucket name form
@@ -23,7 +20,7 @@ $mybucket = $_POST['mybucket'];  // Recieve Subtenant from the main_login form
 $s3 = S3Client::factory(array(
     'version' => 'latest',
     'region'  => '',
-    'endpoint' => 'http://'.$host,
+    'endpoint' => 'http://'.$ENDPOINT,
 //    'profile' => 'pool2',
     'credentials' => array(
          'key'    => $accesskey,
