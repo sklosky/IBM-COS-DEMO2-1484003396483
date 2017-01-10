@@ -13,6 +13,9 @@ $mystring = " ";
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
+<td width="150">Bucket Name</td>
+<td width="350"><input name="mybucket" type="text" id="mybucket"></td>
+<tr>
 <td width="150">Object Name</td>
 <td width="350"><input name="myobject" type="text" id="myobject"></td>
 <tr>

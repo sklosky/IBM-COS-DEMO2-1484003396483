@@ -8,15 +8,13 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\S3\Exception\S3Exception;
 //date_default_timezone_set ( 'America/Los_Angeles' );
-$host = 'vpod02-acc01';
-//$bucket = 'vault-2';
-$bucket = $VAULT;
 
 //
 // Receive object name and string text from the previous form
 // 
 $myobject = $_POST['myobject'];
 $mystring = $_POST['mystring'];
+$mybucket = $_POST['mybucket'];
 
 //
 // Instantiate the client.
@@ -33,7 +31,7 @@ $s3 = S3Client::factory(array(
 ));
 
 $s3->putObject([
-    'Bucket' => $bucket,
+    'Bucket' => $mybucket,
     'Key'    => $myobject,
     'Body'   => $mystring
 ]);
