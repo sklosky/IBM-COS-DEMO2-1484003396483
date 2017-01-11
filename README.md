@@ -12,7 +12,7 @@ This is an app built to demonstrate IBM COS Client side API calls
 
 1. Make sure you have a Bluemix account (you can sign up for a free trial)
 2. Use this button to deploy a clone of the master branch from github to your Bluemix account
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/sklosky/IBM-COS-DEMO-1483922917659.git)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/sklosky/IBM-COS-DEMO2-1484003396483.git)
 
 
 ## Run the app locally
