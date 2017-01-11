@@ -5,6 +5,9 @@
 //$ACCESSKEY = 'VfAY8vRGl6LvV4XjZaM7';
 //$SECRETKEY = 'C6lhiZo1U32iHykYrTCa7SDRP9BUtesLzd7RVdBQ';
 
+//Not sure if the environment variables will survive when the app is redeployed and restarted.
+//Leaving the old settings commented out in the app until we nail down the expected behaviour.
+
 $myEnvironment = $_ENV;
 if (array_key_exists("ibmCosAccessKey", $myEnvironment)) {
 	$ACCESSKEY = $myEnvironment['ibmCosAccessKey'];

@@ -1,6 +1,19 @@
-# PHP Starter Overview
+# IBM COS DEMO Overview
 
-The PHP Starter demonstrates a simple, reusable PHP web application.
+This is an app built to demonstrate IBM COS Client side API calls
+
+-Based on the Bluemix PHP Starter app
+
+-With contributions from John Shubeck for the core S3 client code
+
+-With modifications from Steve Klosky to make it work in Bluemix using a combination of Bluemix Apps and Bluemix Infrastructure
+
+## Deploy a Clone to Bluemix
+
+1. Make sure you have a Bluemix account (you can sign up for a free trial)
+2. Use this button to deploy a clone of the master branch from github to your Bluemix account
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/sklosky/IBM-COS-DEMO-1483922917659.git)
+
 
 ## Run the app locally
 
